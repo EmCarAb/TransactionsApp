@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  margin: 1rem 0 1.68rem 0;
+}
+
+form {
+  text-align: center;
+}
+
+#submitButton {
+  font-size: 23px;
+}
+
+th, td {
+  border: solid black 1px;
+  text-align: center;
+  padding: 10px;
+}
+
+.tableFormat table {
+  margin: 0 auto;
+}

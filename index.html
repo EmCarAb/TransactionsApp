@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mi aplicación para gastos</h1>
+  <div class="row">
+    <div class="col l5 offset-l1 s12">
+      <div class="tableFormat">
+        <table id="propertiesTable">
+        <tr>
+          <th>Tipo</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Categoría</th>
+          <th>Eliminar</th>
+        </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col l5 s12"> 
+      <div class="col s8 offset-s2">
+        <form action="" id="propertiesForm">
+          <span>Tipo de transacción:</span>
+          <p>
+            <label>
+              <input id="propertyIncome" class="with-gap" name="propertySelector" type="radio" value="income" checked />
+              <span>Ingreso</span>
+            </label>
+          
+            <label>
+              <input id="propertyExpense" class="with-gap" name="propertySelector" type="radio" value="expense"/>
+              <span>Egreso</span>
+            </label>
+          </p>
+        
+          <div class="input-field">
+            <label for="propertyDescription">Descripción</label>
+            <input id="propertyDescription" type="text" name="propertyDescription">
+          </div>
+        
+          <div class="input-field">
+            <label for="propertyPrice">Precio</label>
+            <input id="propertyPrice" type="number" name="propertyPrice">
+          </div>
+        
+          <div class="formField">
+            <label for="propertyCategory">Categoría</label>
+            <select id="propertyCategory" class="browser-default" name="propertyCategory">
+             
+            </select>
+          </div>
+          <br>
+          <div class="formField">
+            <button id="submitButton" class="waves-effect waves-light btn-small">Añadir</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
