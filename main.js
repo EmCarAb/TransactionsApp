@@ -18,7 +18,8 @@ form.addEventListener("submit", function(event){
     let allCategories = [
       "Comida",
       "Entretenimiento",
-      "Salario"
+      "Salario",
+      "Otros"
     ]
     allCategories.forEach(insertCategory);
   }
